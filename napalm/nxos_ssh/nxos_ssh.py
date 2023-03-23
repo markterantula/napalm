@@ -24,6 +24,18 @@ from napalm.base import helpers
 from napalm.base.exceptions import CommandErrorException, ReplaceConfigException
 from napalm.nxos import NXOSDriverBase
 
+# import third party lib
+from typing import (
+    Optional,
+    Dict,
+    List,
+    Union,
+    Any,
+    cast,
+    Callable,
+    TypeVar,
+)
+
 # Easier to store these as constants
 HOUR_SECONDS = 3600
 DAY_SECONDS = 24 * HOUR_SECONDS
